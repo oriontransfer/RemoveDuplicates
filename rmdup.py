@@ -96,10 +96,11 @@ for k in duplicates:
 				dst_path = os.path.join(to,k[0])
 				
 				try:
+					print "Duplicate", k[0], "renamed to", dst_path
 					os.rename(k[0], dst_path)
 				except:
 					print 'Error trying to move:', k[0], 'to:', dst_path
 		else:
 			print 'Found:', k[0], 'duplicate of:', unique[k[1]][0]
 	else:
-		print 'Similar match:', k[0] , 'of:', unique[k[1][0]]
+		print 'Similar match:', k[0] , 'of:', unique[k[1]][0]
