@@ -7,6 +7,24 @@ This script was developed to find and remove duplicate music files from large mu
 
 This command will place a duplicate found in ($dir1, $dir2, $dir3) into $duplicates\_path. It will only leave one copy in the original set of directories, with the left most directory having top priority, e.g. in the case that files $dir1/f1.ogg and $dir2/f2.ogg are the same, f2.ogg will be moved to $duplicates_path.
 
+Example
+-------
+
+	$ ./rmdup.py dups test_a test_b test_c
+	Scanning test_a ...
+	Checking test_a
+	Scanning test_b ...
+	Checking test_b
+	Scanning test_c ...
+	Checking test_c
+	Verifying 3 duplicates
+	Moving test_b/README.md duplicate of: test_a/README.md
+	Duplicate test_b/README.md renamed to dups/test_b/README.md
+	Moving test_b/rmdup.py duplicate of: test_a/rmdup.py
+	Duplicate test_b/rmdup.py renamed to dups/test_b/rmdup.py
+	Moving test_c/process_benchmark_data.rb duplicate of: test_b/process_benchmark_data.rb
+	Duplicate test_c/process_benchmark_data.rb renamed to dups/test_c/process_benchmark_data.rb
+
 License
 -------
 
