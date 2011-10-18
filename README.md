@@ -5,7 +5,7 @@ This script was developed to find and remove duplicate music files from large mu
 
 	rmdup.py $duplicates_path $dir1 $dir2 [$dir3...]
 
-This command will place a duplicate found in ($dir1, $dir2, $dir3) into $duplicates\_path. It will only leave one copy in the original set of directories, with the left most directory having top priority, e.g. in the case that files $dir1/f1.ogg and $dir2/f2.ogg are the same, f2.ogg will be moved to $duplicates_path.
+This command will place a duplicate found in (`$dir1`, `$dir2`, `$dir3`) into `$duplicates_path`. It will only leave one copy in the original set of directories, with the left most directory having top priority, e.g. in the case that files `$dir1/f1.ogg` and `$dir2/f2.ogg` are the same, `f2.ogg` will be moved to `$duplicates_path/$dir2/f2.ogg`.
 
 Example
 -------
